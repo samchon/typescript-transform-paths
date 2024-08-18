@@ -1,6 +1,5 @@
 /** Changes after this point: https://github.com/microsoft/TypeScript/wiki/API-Breaking-Changes#typescript-40 */
 import type {
-  default as TsCurrentModule,
   EntityName,
   ExportDeclaration,
   Expression,
@@ -15,6 +14,7 @@ import type {
   ModuleName,
   NamedExportBindings,
   NamedImportBindings,
+  default as TsCurrentModule,
   TypeNode,
 } from "typescript";
 import type TsThreeEightModule from "typescript-3";

@@ -1,7 +1,6 @@
-import ts, { CompilerOptions, EmitHost, Pattern, SourceFile } from "typescript";
-import { PluginConfig } from "ts-patch";
 import { Minimatch } from "minimatch";
-
+import { PluginConfig } from "ts-patch";
+import ts, { CompilerOptions, EmitHost, Pattern, SourceFile } from "typescript";
 import { HarmonyFactory } from "./harmony";
 
 /* ****************************************************************************************************************** */

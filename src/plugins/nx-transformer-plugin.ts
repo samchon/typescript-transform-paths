@@ -1,5 +1,5 @@
-import transformer from "../transformer";
 import ts from "typescript";
+import transformer from "../transformer";
 
 export interface TsTransformPathsConfig {
   readonly useRootDirs?: boolean;

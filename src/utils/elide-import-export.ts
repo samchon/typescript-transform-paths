@@ -35,7 +35,6 @@
  *   import { A, B } from "./b";
  *   export { A } from "./b";
  */
-import { ImportOrExportDeclaration, VisitorContext } from "../types";
 import {
   Debug,
   EmitResolver,
@@ -53,6 +52,7 @@ import {
   Visitor,
   VisitResult,
 } from "typescript";
+import { ImportOrExportDeclaration, VisitorContext } from "../types";
 
 /* ****************************************************************************************************************** */
 // region: Utilities

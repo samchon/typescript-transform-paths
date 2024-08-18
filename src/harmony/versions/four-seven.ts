@@ -1,6 +1,5 @@
 /** Changes after this point: https://github.com/microsoft/TypeScript/wiki/API-Breaking-Changes#typescript-48 */
 import type {
-  default as TsCurrentModule,
   AssertClause,
   ExportDeclaration,
   Expression,
@@ -11,6 +10,7 @@ import type {
   ModuleDeclaration,
   ModuleName,
   NamedExportBindings,
+  default as TsCurrentModule,
 } from "typescript";
 import type TsFourSevenModule from "typescript-4.7";
 import type { TsTransformPathsContext } from "../../types";

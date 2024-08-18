@@ -2,10 +2,8 @@ import * as tsNode from "ts-node";
 import { REGISTER_INSTANCE } from "ts-node";
 import { PluginConfig } from "ts-patch";
 import { CustomTransformers, PluginImport, Program } from "typescript";
-
 import { register } from "typescript-transform-paths";
 import * as transformerModule from "../../dist/transformer";
-
 import { ModuleNotFoundError } from "../utils";
 
 /* ****************************************************************************************************************** *
