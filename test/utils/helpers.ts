@@ -36,7 +36,7 @@ function createWriteFile(outputFiles: EmittedFiles) {
     if (!ext) return;
     rootName = `${rootName}.ts`;
     const key = ext.replace(".", "") as keyof EmittedFiles[string];
-    if (!outputFiles[rootName]) outputFiles[rootName] = <any>{};
+    outputFiles[rootName] ??= {} as Record<keyof EmittedFiles[string], string>;
     outputFiles[rootName][key] = data;
   };
 }
