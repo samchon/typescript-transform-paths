@@ -42,7 +42,7 @@ export function nodeVisitor(this: VisitorContext, node: ts.Node): ts.Node | unde
 
         const caption = textNode
           .getFullText()
-          .substring(pos, end)
+          .slice(pos, end)
           .replace(
             /* searchValue */ kind === tsInstance.SyntaxKind.MultiLineCommentTrivia
               ? // Comment range in a multi-line comment with more than one line erroneously
