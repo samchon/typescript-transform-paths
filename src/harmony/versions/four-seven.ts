@@ -118,7 +118,6 @@ export function handler(context: TsTransformPathsContext, prop: string | symbol)
 }
 
 export function downSample<T extends [...unknown[]]>(...args: T): DownSampleTsTypes<TypeMap, T> {
-  // @ts-expect-error TS(2322) FIXME: Type 'T' is not assignable to type 'DownSampleTsTypes<TypeMap, T>'.
   return args;
 }
 
